@@ -48,8 +48,8 @@ RUN make install
 RUN make samples
 RUN make config
 
-#CMD /usr/sbin/asterisk
+CMD /usr/sbin/asterisk
 #ENTRYPOINT /usr/sbin/asterisk
 
 #Keep the container running
-#CMD tail -f /dev/null
+CMD tail -f /dev/null
