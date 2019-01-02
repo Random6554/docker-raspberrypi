@@ -48,6 +48,12 @@ RUN make install
 RUN make samples
 RUN make config
 
+WORKDIR /etc/asterisk
+COPY /etc/asterisk/sip.conf .
+COPY /etc/asterisk/sip_users.conf .
+COPY /etc/asterisk/extensions.conf .
+
+
 CMD /usr/sbin/asterisk && tail -f /dev/null
 #ENTRYPOINT /usr/sbin/asterisk
 
