@@ -48,4 +48,4 @@ RUN make install
 RUN make samples
 RUN make config
 
-cmd /usr/sbin/asterisk
+CMD /usr/sbin/asterisk
