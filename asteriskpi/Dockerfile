@@ -47,3 +47,4 @@ RUN make
 RUN make install
 RUN make samples
 RUN make config
+RUN asterisk -vvvc
