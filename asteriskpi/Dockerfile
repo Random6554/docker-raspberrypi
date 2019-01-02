@@ -48,7 +48,7 @@ RUN make install
 RUN make samples
 RUN make config
 
-CMD /usr/sbin/asterisk
+RUN /usr/sbin/asterisk
 #ENTRYPOINT /usr/sbin/asterisk
 
 #Keep the container running
