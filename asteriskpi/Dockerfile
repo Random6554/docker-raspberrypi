@@ -48,4 +48,5 @@ RUN make install
 RUN make samples
 RUN make config
 
-CMD /usr/sbin/asterisk
+#CMD /usr/sbin/asterisk
+ENTRYPOINT /usr/sbin/asterisk
