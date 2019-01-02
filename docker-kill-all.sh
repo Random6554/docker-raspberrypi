@@ -1,10 +1,7 @@
 #!/bin/bash
-
-#stop all containers:
-docker stop $(docker ps -q)
-
-#remove all containers
+# Stop all containers
+docker stop $(docker ps -a -q)
+# Delete all containers
 docker rm $(docker ps -a -q)
-
-#remove all docker images
+# Delete all images
 docker rmi $(docker images -q)
