@@ -1,4 +1,3 @@
 #!/bin/bash
-
-#stop all containers:
-docker kill $(docker ps -q)
+# Stop all containers
+docker stop $(docker ps -a -q)
