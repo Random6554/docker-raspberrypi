@@ -1,2 +1,2 @@
-docker build -t asteriskpi:1.0
+docker build -t asteriskpi:1.0 asteriskpi/
 docker run --name asteriskpi -d asteriskpi:1.0
