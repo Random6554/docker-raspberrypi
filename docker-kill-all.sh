@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #stop all containers:
-docker kill $(docker ps -q)
+docker stop $(docker ps -q)
 
 #remove all containers
 docker rm $(docker ps -a -q)
