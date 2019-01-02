@@ -26,6 +26,8 @@ vim \
 mlocate \
 wget
 
+RUN mkdir asterisk/
+WORKDIR /asterisk
 RUN wget http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/asterisk-11.21.2.tar.gz
 RUN tar xvzf asterisk-11-current.tar.gz
 
