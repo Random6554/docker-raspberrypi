@@ -1,6 +1,10 @@
 FROM centos:7
 MAINTAINER Glynn Windebank
 USER root
+# -p 10050-10100:10050-10100/udp -p 5060:5060 -p 5060:5060/udp
+EXPOSE 5060
+EXPOSE 5060/udp
+EXPOSE 10050-10100/udp
 
 RUN \
 yum -y updateinfo && \
@@ -49,6 +53,7 @@ RUN make samples
 RUN make config
 
 WORKDIR /etc/asterisk
+COPY /etc/asterisk/rtp.conf .
 COPY /etc/asterisk/sip.conf .
 COPY /etc/asterisk/sip_users.conf .
 COPY /etc/asterisk/extensions.conf .
