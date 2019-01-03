@@ -5,6 +5,7 @@ USER root
 EXPOSE 5060
 EXPOSE 5060/udp
 EXPOSE 10050-10100/udp
+ENV HOSTNAME=asteriskpi
 
 RUN \
 yum -y updateinfo && \
