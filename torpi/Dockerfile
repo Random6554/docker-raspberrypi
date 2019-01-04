@@ -4,6 +4,7 @@ ENV HOSTNAME=torpi
 
 RUN \
 yum -y updateinfo && \
+yum -y update \
 yum -y install \
 tor \
 dnsmasq \
