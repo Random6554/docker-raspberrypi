@@ -6,6 +6,7 @@ RUN \
 yum -y updateinfo && \
 yum -y update \
 yum -y install \
+epel-release \
 tor \
 dnsmasq \
 vim \
