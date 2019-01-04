@@ -13,6 +13,7 @@ yum -y install \
 epel-release \
 tor \
 wget \
+make \
 dnsmasq \
 vim \
 ntp \
