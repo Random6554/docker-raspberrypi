@@ -19,4 +19,4 @@ mlocate
 WORKDIR /etc/tor/
 COPY /etc/tor/torrc .
 
-CMD /usr/sbin/asterisk && tail -f /dev/null
+CMD tail -f /dev/null
