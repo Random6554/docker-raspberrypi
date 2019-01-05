@@ -7,9 +7,9 @@ ENV HOSTNAME=torpi
 
 RUN \
 #yum repolist \
-apt updateinfo && \
-apt update && \
-apt -y install \
+apt-get updateinfo && \
+apt-get update && \
+apt-get -y install \
 tor \
 wget \
 make \
