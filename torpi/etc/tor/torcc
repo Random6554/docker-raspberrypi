@@ -24,7 +24,7 @@
 ## can access your SocksPort may be able to learn about the connections
 ## you make.
 #SocksPolicy accept 192.168.0.0/16
-#SocksPolicy reject *
+SocksPolicy reject *
 
 ## Logs go to stdout at level "notice" unless redirected by something
 ## else, like one of the below lines. You can have as many Log lines as
@@ -90,7 +90,7 @@ DNSPort 5353
 DNSListenAddress 172.16.69.5
 
 ## Required: what port to advertise for incoming Tor connections.
-#ORPort 9001
+ORPort 9001
 ## If you want to listen on a port other than the one advertised in
 ## ORPort (e.g. to advertise 443 but bind to 9090), you can do it as
 ## follows.  You'll need to do ipchains or other port forwarding
