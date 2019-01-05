@@ -17,11 +17,8 @@ ntp \
 bzip2 \
 zip \
 p7zip \
-gftp \
 unzip \
-libzip \
-mlocate \
-libevent-devel
+mlocate
 
 WORKDIR /etc/tor/
 COPY /etc/tor/torrc .
